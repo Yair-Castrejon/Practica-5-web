@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Blog de Viajes</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+
+    <header>
+        <div class="contenedor">
+            <div class="logo">
+                <img id="logo" src="img/logo.png" alt="logo blog de viajes">
+            </div>
+        </div> <!--.contenedor-->
+    </header>
+    <div id="navegacion" class="navegacion">
+            <nav class="menu">
+              <ul>
+                  <li><a href="http://www.google.com">Home</a></li>
+                  <li><a href="#">About us</a>
+                        <ul>
+                            <li><a href="#">Mision</a></li>
+                            <li><a href="#">Vision</a></li>
+                            <li><a href="#">Objectives</a></li>
+                        </ul>
+                  </li>
+                  <li><a href="#">Blog</a>
+                        <ul>
+                            <li><a href="#">Advisors</a></li>
+                            <li><a href="#">Cities</a></li>
+                            <li><a href="#">Promotions</a></li>
+                        </ul>
+                  </li>
+                  <li><a class="enlace" href="#">Store</a></li>
+                  <li><a class="enlace" href="#">Contact</a></li>
+              </ul>
+            </nav>
+      </div>
+
+    <div class="contenido contenedor">
+        <main>
+              <form>
+                  <h2>Hi! Welcome to our page, please register your information below so you can join our community!</h2>
+                  <h3>Inputs with (*) are required values</h3>
+                  <br><br>
+                  <label> &nbsp &nbsp &nbsp First name (*): </label>
+                  <input id='fName' type='text'>
+                  <br><br><br>
+                  <label> &nbsp &nbsp &nbspLast name(*): &nbsp </label>
+                  <input id='lName' type='text'>
+                  <br><br><br>
+                  <label> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Age: &nbsp &nbsp </label>
+                  <input id='age' type='text'>
+                  <br><br><br>
+                  <label> &nbsp &nbsp &nbsp &nbsp Comments: &nbsp </label>
+                  <input id='comments' type='text'>
+                  <br><br><br>
+                  <label>&nbsp Desired places: &nbsp </label>
+                  <input id='wishlist' type='text'>
+                  <br><br><br>
+                  <label> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Email(*): </label>
+                  <input id='mail' type='text'>
+                  <br><br><br>
+                  <button id='button' type="reset" onclick="dataRetriever()"> Send !</button>   
+              </form>
+        </main>
+        <aside>
+          <h3>Find or Erase User</h3>
+          <label>ID: </label>
+          <input id='ids' type='text'>
+          <button id='locate' type='button' onclick="dataShow()">Locate</button>
+          <button id='erase' type='button' onclick="dataErase()">Erase</button>
+          <br><br><br>
+          <label>Locate data</label>
+          <input id='tutti' type='text'>
+          <button id='frutti' type='button' onclick="dataFinder()">Find Me!</button>
+          <br><br>
+          <table>
+            <tbody id='location'></tbody>
+          </table>
+        </aside>
+    </div> <!--.contenido-->
+
+      
+      
+      <script src="jquery-1.12.0.min.js"></script>
+      <script src="script.js"></script>
+
+  </body>
+</html>
